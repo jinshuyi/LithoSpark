@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View PDF</title>
     <style>
-        body { text-align: center; font-family: Arial, sans-serif; }
-        iframe { width: 90%; height: 80vh; border: none; }
+        body { 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        iframe { 
+            width: 90%; 
+            height: 80vh; 
+            border: none; 
+        }
         .btn {
             display: inline-block;
             margin-top: 20px;
@@ -24,11 +36,12 @@
     </style>
 </head>
 <body>
-    <h2>PDF Preview</h2>
-    <iframe src="LithoSpark_展示PPT.pdf"></iframe>
-    <br>
-    
-    <!-- 返回 GitHub 仓库的按钮 -->
-    <a class="btn" href="https://github.com/jinshuyi/LithoSpark" target="_blank">🔙 Back to GitHub</a>
+    <div class="container">
+        <h2>PDF Preview</h2>
+        <iframe src="LithoSpark_展示PPT.pdf"></iframe>
+        <br>
+        <!-- 返回 GitHub 的按钮 -->
+        <a class="btn" href="https://github.com/jinshuyi/LithoSpark" target="_blank">🔙 Back to GitHub</a>
+    </div>
 </body>
 </html>
